@@ -1,0 +1,34 @@
+markdown: redcarpet
+pygments: true
+paginate: 5
+exclude: [Gemfile, Gemfile.lock, Procfile, vendor]
+keep_files: ['.git']
+
+title: The One Theme
+url: http://localhost:4000
+feed: /atom.xml
+author:
+  name: John
+  email: zhaoxuan1727@gmail.com
+  description: "The one theme is another web theme design by PIZn."
+
+about: "I am John."
+follow:
+  email: zhaoxuan1727@gmail.com
+  github: https://github.com/zhaoxuan
+  twitter: http://www.twitter.com/piznlin
+  google: https://plus.google.com/107483619032085919305
+  facebook: http://facebook.com/zhanxinlin
+description: Just an simple blog
+
+indexContent: true
+imageLink: http://www.pizn.net/static/images/20121109Monutain.jpg
+
+style: /css/style.css
+blogDesc: Simple
+favicon: /favicon.ico
+theme: default
+
+disqus: piznblog
+
+copyright: John Zhao All rights reserved
