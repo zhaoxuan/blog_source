@@ -20,7 +20,8 @@
 <div id="content">
     <header id="head">
         <div id="logo">
-            <img src="http://mmistakes.github.io/minimal-mistakes/images/bio-photo.jpg" class="bio-photo" alt="{{ site.owner.name }} bio photo">
+            <!-- <img src="http://mmistakes.github.io/minimal-mistakes/images/bio-photo.jpg" class="bio-photo" alt="{{ site.owner.name }} bio photo"> -->
+            <img src="http://zhaoxuan.github.io/static_files/images/head_portrait.png" class="bio-photo" alt="{{ site.owner.name }} bio photo">
             <h2>{{ site.blogDesc }}</h2>
         </div>
         <nav id="nav">
@@ -46,23 +47,6 @@
 <script src="{{ site.url }}/js/jquery.js" type="text/javascript"></script>
 <script src="{{ site.url }}/js/jquery.scrollTo.js" type="text/javascript"></script>
 <script src="{{ site.url }}/js/theOne.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    /**
-     * disqus
-     */
-    var disqusId = $("#disqus_thread");
-    if(disqusId && typeof disqusId != "undefined" && disqusId.length != 0) {
-        var disqusName = "{{ site.disqus }}";
-        var disqus_shortname = disqusName != "" ? disqusName : "piznblog";
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] ||
-                document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    }
-});
-</script>
+
 </body>
 </html>

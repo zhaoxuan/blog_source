@@ -1,30 +1,46 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2013-09-25 09:15:55
-categories: jekyll
+title: "提高 ruby script 的健壮性"
+date: 2013-09-25 10:49
+comments: true
+categories: ruby
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+首先必须承认 ruby 脚本确实是一个非常好用的工具。
 
-Jekyll also offers powerful support for code snippets:
+但是我们习惯了一个 script 解决所有的问题，比如
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+# main.rb
+require 'rubygems'
+
+system 'rm -fr /tmp'
 {% endhighlight %}
 
-{% highlight python %}
-def fun()
-    print "hello"
-{% endhighlight%}
+Soooooooo simple。
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+但是上面的文件，在其他项目里面被 `require 'main'` 会有什么后果?
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+代码就直接被执行了，后果可大可小，如果是 `system 'sudo rm -fr /'`。
+
+从 python 借鉴了点东西，所有的代码还是放到 `def main(); end` 里面执行比较安全。
+
+{% highlight ruby %}
+# main.rb
+def main
+  do some code
+end
+
+if $0 == __FILE__
+  main
+end
+{% endhighlight %}
+
+在判断下当前程序是脚本还是被 `require` 的。
+
+
+
+
+
+
 
