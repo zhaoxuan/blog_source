@@ -8,6 +8,7 @@
   src: url( '../font/JennaSue.eot?iefix' ) format( 'eot' ),  /* IE6-IE8 */
        url( '../font/JennaSue.ttf' ) format( 'truetype' );   /* sofari .. */
 }
+
 html { color: #4d4d4d; background: #fff; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section { margin: 0; padding: 0; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -532,8 +533,6 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; color:#333; }
     .post table th, .post table td { border: 1px solid #ddd; padding: 2px 0px; }
 }
 
-
-
 /*****************************************************************************/
 /*
 /* By John
@@ -547,6 +546,12 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; color:#333; }
   border-radius: 150px;
   max-width: 150px;
 }
+
+.img_width_580{
+    width: 580px;
+}
+
+
 
 
 
