@@ -10,6 +10,5 @@ categories: algorithm
 
 读起来略微有点费解，其实我个人理解，信息增益，既然有增益，必然有要对比。
 
-首先要对信息进行量化，说到这个，就不得不提到我上大学非常崇拜的一个大神 “信息论之父” 香农。
+首先要对信息进行量化，说到这个，就不得不提到我上大学非常崇拜的一个大神 “信息论之父” 香农，他提出了[信息熵](/algorithm/2012/12/07/information-theory.html "Title")，实现了对信息的量化。
 
-<a href="/algorithm/2012/12/07/information-theory.html" target="_blank">信息熵</a>

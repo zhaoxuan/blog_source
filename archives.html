@@ -15,8 +15,12 @@ date: All posts is here.
             {% endif %}
         {% endunless %}
         <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-        <h2 itemprop="headline"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 100 }}{% endif %}</p>
+        <p class="time">
+            <time pubdate="{{ post.date }}">{{ post.date | date: '%d' }} {{ post.date | date: '%b' }}</time>
+            <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a>
+            <span class="pull-right">{{post.categories | join: ','}}</span>
+        </p>
+        <!-- <p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 100 }}{% endif %}</p> -->
         </article>
     {% endfor %}
 </article>

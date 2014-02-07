@@ -49,9 +49,9 @@ body .fn-hide               { display:none; }
 .fn-left                    { float:left; }
 .fn-right                   { float:right; }
 
-article a:visited, article a:hover, article a:active, #foot p a, #foot p a:hover, #pagination a:hover { text-decoration: none; border-bottom: 1px solid #ccc; color: black; }
+/*article a:visited, article a:hover, article a:active, #foot p a, #foot p a:hover, #pagination a:hover { text-decoration: none; border-bottom: 1px solid #ccc; color: black; }*/
+/*article a:link { text-decoration: none; color: black; text-transform: uppercase; }*/
 
-article a:link { text-decoration: none; color: black; text-transform: uppercase; }
 /*  Font Awesome
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
@@ -551,11 +551,21 @@ h1, h2, h3, h4, h5, h6{ font-weight: 500; color:#333; }
     width: 580px;
 }
 
+.post p a {color: #428bca;}
+.post p a:hover {color: #2a6496; text-decoration: underline;}
+.pagination-link a {color: #428bca;}
+.pagination-link a:hover {color: #2a6496;}
+article h2 a {color: #428bca;}
+article h2 a:hover {color: #2a6496;}
 
+.pagination-published {
+    font-family: 'Fjalla One';
+    font-size: 0.9em;
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #999;
+    font: 16px/1.5 "Roboto Slab", 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
-
-
-
-
-
+.pull-right {margin-right: 1px;}
 
