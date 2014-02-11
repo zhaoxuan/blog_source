@@ -1,5 +1,12 @@
 # markdown: redcarpet
 markdown: kramdown
+# kramdown:
+  # auto_ids: true
+  # footnote_nr: 1
+  # entity_output: as_char
+  # toc_levels: 1..6
+  # use_coderay: false
+  # parse_block_html: true
 pygments: true
 paginate: 5
 exclude: [Gemfile, Gemfile.lock, Procfile, vendor]
@@ -12,7 +19,7 @@ feed: /atom.xml
 author:
   name: John
   email: zhaoxuan1727@gmail.com
-  description: "The one theme is another web theme design by PIZn."
+  description: "Entities should not be multiplied unnecessarily."
 
 about: "I am John."
 follow:
@@ -24,7 +31,6 @@ follow:
 description: Just an simple blog
 
 indexContent: true
-imageLink: http://www.pizn.net/static/images/20121109Monutain.jpg
 
 style: /css/style.css
 blogDesc: Simple
