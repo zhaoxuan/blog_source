@@ -16,12 +16,11 @@ date: All posts is here.
         {% endunless %}
         <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <p class="time">
-            <time pubdate="{{ post.date }}">{{ post.date | date: '%d' }} {{ post.date | date: '%b' }}</time>
+            <time pubdate="{{ post.date }}">{{ post.date | date: '%d' }} {{ post.date | date: '%b' }}&nbsp&nbsp&nbsp&nbsp&nbsp›</time>
             <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a>
             <span class="pull-right">{{post.categories | join: ','}}</span>
         </p>
-        <!-- <p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 100 }}{% endif %}</p> -->
+        <!-- <p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 300 }}{% endif %}</p> -->
         </article>
     {% endfor %}
 </article>
-
