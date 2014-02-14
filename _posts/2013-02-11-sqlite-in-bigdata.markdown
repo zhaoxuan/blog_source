@@ -69,15 +69,30 @@ ID3 算法里面决策树的分裂是父子关系的，子节点的数据都是�
 
 最后还是用了 SQLite 来做一个缓存的方式来完成了工作。
 
+### 实现
 
+SQLite 其实可以在内存里面
 
+{% highlight ruby %}
+cache = SQLite3::Database.new ":memory:"
+{% endhighlight %}
 
+依据决策树的特点，孩子节点的数据肯定是父节点的条件顾虑出来的。
 
+{% highlight ruby %}
+if in_cache?(opt)
+  puts "\e[31;1m==> exec sql in sqlite :\e[0m #{sql}"
+  return cache_table_exec(sql)
+else
+  puts "\e[31;1m==> exec sql in greenplum :\e[0m #{sql}"
+  return gp_exec(sql)
+end
+{% endhighlight %}
 
+in_cache? 其实就是一个判断当前节点的数据是不是上次缓存的数据的子集，如果是就用 sqlite 里面的数据查询，不是就连接 gp 数据查询。
 
+这样既保证决策树用 sql 来查询数据的功能不变，还能加快速度。
 
-
-
-
+时间从原来的 2-3 天，现在可以在 1 个小时内完成。
 
 
