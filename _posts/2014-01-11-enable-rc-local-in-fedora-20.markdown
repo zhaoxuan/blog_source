@@ -3,7 +3,7 @@ layout: post
 title: "Enable rc-local in Fedora 20"
 date: 2014-01-11 09:59
 comments: true
-categories: linux fedora systemctl
+categories: linux
 ---
 From http://joshua14.homelinux.org/blog/?p=1377
 

@@ -13,8 +13,9 @@ exclude: [Gemfile, Gemfile.lock, Procfile, vendor]
 keep_files: ['.git']
 
 title: The Simple
-url: http://zhaoxuan.github.io
-# url: http://localhost:4000
+# url: http://zhaoxuan.github.io
+# url: http://www.johninux.com/
+url: http://localhost:4000
 feed: /atom.xml
 author:
   name: John
