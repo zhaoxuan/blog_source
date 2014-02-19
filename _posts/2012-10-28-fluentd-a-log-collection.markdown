@@ -3,7 +3,7 @@ layout: post
 title: "使用 Fluentd 构建一个实时日志收集系统"
 date: 2012-10-28 07:29
 comments: true
-categories: fluentd ruby log
+categories: log
 ---
 
 Fluentd 是一个日志收集系统，它的特点在于其各部分均是可定制化的，你可以通过简单的配置，将日志收集到不同的地方。

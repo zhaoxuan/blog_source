@@ -3,7 +3,7 @@ layout: post
 title: "Fluentd 配置文件"
 date: 2012-10-29 07:56
 comments: true
-categories: fluentd log ruby
+categories: log
 ---
 <a href="http://docs.fluentd.org/articles/config-file" target="_blank">Fluentd config file</a>
 Overview
