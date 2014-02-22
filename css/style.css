@@ -569,3 +569,30 @@ article h2 a:hover {color: #2a6496;}
 
 .pull-right {margin-right: 1px; float: right;}
 
+/*For LaTex display*/
+.MathJax_Display {max-width: 580px;}
+
+/*For img display*/
+/*.alignleft {
+ display: inline;
+ float: left;
+}
+.alignright {
+ display: inline;
+ float: right;
+}*/
+.aligncenter {
+ clear: both;
+ display: block;
+ margin:auto;
+}
+
+
+
+
+
+
+
+
+
+
