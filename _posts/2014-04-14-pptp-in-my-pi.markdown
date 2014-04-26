@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Run all traffic through an PPTP VPN"
+title: "Run all traffic through an PPTP VPN on my Raspberry Pi"
 date: 2014-04-14 09:01
 comments: true
 categories: pi
