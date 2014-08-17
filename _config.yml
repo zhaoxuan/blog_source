@@ -1,13 +1,13 @@
 # markdown: redcarpet
 markdown: kramdown
 # kramdown:
-  # auto_ids: true
-  # footnote_nr: 1
-  # entity_output: as_char
-  # toc_levels: 1..6
-  # use_coderay: false
-  # parse_block_html: true
-pygments: true
+#   auto_ids: true
+#   footnote_nr: 1
+#   entity_output: as_char
+#   toc_levels: 1..6
+#   use_coderay: true
+#   parse_block_html: true
+highlighter: pygments
 paginate: 5
 exclude: [Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendor, .gitignore]
 keep_files: ['.git']
