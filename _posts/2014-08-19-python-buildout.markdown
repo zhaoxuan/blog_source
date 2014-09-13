@@ -50,6 +50,6 @@ recipe = zc.recipe.egg 就是把一些把下面的 egg 安装到 eggs 目录中�
 
 最后在 `bin` 下面就能看见 `glances` 命令。
 
-More Info About [Buildout](http://www.buildout.org/en/latest/ "Title")
+For More Infomation, [Buildout](http://www.buildout.org/en/latest/ "Title")
 
 Enjoy it!
