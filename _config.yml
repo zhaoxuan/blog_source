@@ -9,7 +9,7 @@ markdown: kramdown
 #   parse_block_html: true
 highlighter: pygments
 paginate: 5
-exclude: [Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendor, .gitignore]
+exclude: [Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendor, .gitignore, deploy.sh]
 keep_files: ['.git']
 
 title: The Simple
